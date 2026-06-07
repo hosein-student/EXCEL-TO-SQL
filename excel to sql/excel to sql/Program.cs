@@ -8,6 +8,12 @@ namespace ExcelToSql
 {
     class Program
     {
+
+
+
+
+
+
         static void Main()
         {
             string excelPath = @"E:\Book1.xlsx"; // ← مسیر فایل اکسل رو دقیق وارد کن
@@ -42,7 +48,7 @@ namespace ExcelToSql
                 {
                     if (firstRow)
                     {
-                       
+
                         foreach (var cell in row.Cells())
                             dt.Columns.Add(cell.Value.ToString());
                         firstRow = false;
